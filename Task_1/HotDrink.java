@@ -11,26 +11,6 @@ public class HotDrink extends Product {
     }
 
     @Override
-    public String getName() {
-        return super.name;
-    }
-
-    @Override
-    public void setName(String name) {
-        super.name = name;
-    }
-
-    @Override
-    public int getPrice() {
-        return super.price;
-    }
-
-    @Override
-    public void setPrice(int price) {
-        super.price = price;
-    }
-    
-    @Override
     public String toString() {
         return "HotDrink{" + "Имя = " + name +
         "; Цена = " + price + "; Температура = " + temperature + "; Объем = " + volume + "}";
@@ -43,14 +23,5 @@ public class HotDrink extends Product {
     public double getVolume() {
         return this.volume;
     }
-    
-    // public int getTemperature() {
-    //     return temperature;
-    // }
-
-    // public void setTemperature(int temp) {
-    //     this.temperature = temp;
-    // }
-    
     
 }

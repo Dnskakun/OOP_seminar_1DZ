@@ -14,22 +14,23 @@ public class program {
         water_list.add(hotKey);
 
         wvm.putProduct(water_list);
-        // System.out.println(wvm.getProduct());
-        // System.out.println(wvm.getProduct());
-        // System.out.println(wvm.getProduct());
-
-        ////////////////////////////////////////////
+        
+        System.out.println("\n////////////////////////////////////////////\n");
+        System.out.println(wvm.getProduct());
+        System.out.println(wvm.getProduct());
+        System.out.println("\n////////////////////////////////////////////\n");
+        
         
         HotDrinkVendingMachine hdwm = new HotDrinkVendingMachine();
 
-        Product latte = new HotDrink("Латте", 80, 75, 0.5);
-        Product espresso = new HotDrink("Эспрессо", 100, 80, 0.3);
-        Product hotTea = new HotDrink("Горячий чай", 40, 95, 0.2);
-        Product americano = new HotDrink("Американо", 80, 90, 0.2);
-        Product capuchino = new HotDrink("Капусино", 90, 90, 0.3);
-        Product mokka = new HotDrink("Мокка", 120, 85, 0.5);
+        HotDrink latte = new HotDrink("Латте", 80, 75, 0.5);
+        HotDrink espresso = new HotDrink("Эспрессо", 100, 80, 0.3);
+        HotDrink hotTea = new HotDrink("Горячий чай", 40, 95, 0.2);
+        HotDrink americano = new HotDrink("Американо", 80, 90, 0.2);
+        HotDrink capuchino = new HotDrink("Капусино", 90, 90, 0.3);
+        HotDrink mokka = new HotDrink("Мокка", 120, 85, 0.5);
         
-        LinkedList<Product> hotDrinks_list = new LinkedList<>();
+        LinkedList<HotDrink> hotDrinks_list = new LinkedList<>();
         hotDrinks_list.add(latte);
         hotDrinks_list.add(espresso);
         hotDrinks_list.add(hotTea);
@@ -44,7 +45,6 @@ public class program {
         } else {
             System.out.println("Такого напитка нет в наличии!");
         }
-
 
     }
 }

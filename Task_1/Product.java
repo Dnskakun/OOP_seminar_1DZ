@@ -3,19 +3,33 @@ public abstract class Product {
     protected String name;
     protected int price;
     
-    public abstract String getName();
+    public String getName() {
+        return name;
+    }
 
-    public abstract void setName(String name);
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public abstract int getPrice();
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
     
-    public abstract void setPrice(int price);
-
-    //public abstract int getTemperature();
-
     @Override
     public String toString() {
-        return "Product [name=" + name + ", price=" + price + "]";
+        return "Product [Имя =" + name + ", Цена =" + price + "]";
     }
+
+
+
+    
+
+
+
+
 
 }

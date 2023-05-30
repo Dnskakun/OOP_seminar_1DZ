@@ -4,7 +4,6 @@ public class WaterVendingMachine implements VendingMachine {
 
     private LinkedList<Product> waters;
 
-    @Override
     public void putProduct(LinkedList<Product> item) {
         this.waters = item;
     }
@@ -14,9 +13,9 @@ public class WaterVendingMachine implements VendingMachine {
         return waters.pollLast();
     }
 
-    @Override
-    public HotDrink getProduct(String name, int price, int temperature, double volume) {
-        return null;
+    public void putProduct() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'putProduct'");
     }
 
 }
